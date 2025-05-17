@@ -5,8 +5,8 @@
             "type": "npm",
             "script": "watch",
             "problemMatcher": [
-                "$ts-webpack-watch",
-                "$tsc-watch"
+                "$ts-webpack",
+                "$tsc"
             ],
             "isBackground": true,
             "presentation": {

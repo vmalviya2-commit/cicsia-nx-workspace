@@ -6,10 +6,6 @@
   "engines": {
     "vscode": "^1.85.0"
   },
-  "extensionDependencies": [],
-  "activationEvents": [
-    "onCommand:cicsia-vscode-extension.showWebview"
-  ],
   "categories": [
     "Other"
   ],

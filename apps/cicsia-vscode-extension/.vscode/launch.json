@@ -37,11 +37,5 @@
                 "webpack:///./src/*": "${webRoot}/src/*"
             }
         }
-    ],
-    "compounds": [
-        {
-            "name": "Extension + Webview",
-            "configurations": ["Run Extension", "Debug Webview"]
-        }
     ]
 }
