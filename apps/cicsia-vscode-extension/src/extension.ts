@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         // Handle messages from the webview
         panel.webview.onDidReceiveMessage(
-            message => {
+            (message: { command: string; text: string }) => {
                 switch (message.command) {
                     case 'alert':
                         vscode.window.showInformationMessage(message.text);
