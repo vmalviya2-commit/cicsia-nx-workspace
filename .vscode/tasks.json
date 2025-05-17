@@ -4,6 +4,7 @@
         {
             "type": "npm",
             "script": "watch",
+            "path": "apps/cicsia-vscode-extension",
             "problemMatcher": [
                 "$ts-webpack",
                 "$tsc"
