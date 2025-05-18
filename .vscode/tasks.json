@@ -5,9 +5,17 @@
             "type": "npm",
             "script": "watch",
             "path": "apps/cicsia-vscode-extension",
-            "problemMatcher": [
-                "$tsc-watch"
-            ],
+            "problemMatcher": {
+                "owner": "typescript",
+                "pattern": {
+                    "regexp": "^([^\\s].*)\\((\\d+,\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "location": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            },
             "isBackground": true,
             "presentation": {
                 "reveal": "never",
@@ -23,7 +31,17 @@
             "script": "test",
             "path": "apps/cicsia-vscode-extension",
             "group": "test",
-            "problemMatcher": ["$tsc"]
+            "problemMatcher": {
+                "owner": "typescript",
+                "pattern": {
+                    "regexp": "^([^\\s].*)\\((\\d+,\\d+)\\):\\s+(error|warning|info)\\s+(TS\\d+)\\s*:\\s*(.*)$",
+                    "file": 1,
+                    "location": 2,
+                    "severity": 3,
+                    "code": 4,
+                    "message": 5
+                }
+            }
         }
     ]
 }
