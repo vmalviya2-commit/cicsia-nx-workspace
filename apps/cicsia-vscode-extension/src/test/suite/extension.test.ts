@@ -2,7 +2,7 @@ import * as assert from 'assert';
 import * as vscode from 'vscode';
 
 suite('Extension Test Suite', () => {
-    test('Extension should be present', () => {
+    test('Extension should be present', async () => {
         const extension = vscode.extensions.getExtension('cicsia-vscode-extension');
         assert.ok(extension, 'Extension should be registered');
     });
