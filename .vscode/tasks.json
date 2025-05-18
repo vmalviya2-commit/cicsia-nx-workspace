@@ -6,8 +6,7 @@
             "script": "watch",
             "path": "apps/cicsia-vscode-extension",
             "problemMatcher": [
-                "$ts-webpack",
-                "$tsc"
+                "$tsc-watch"
             ],
             "isBackground": true,
             "presentation": {
@@ -18,6 +17,13 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "test",
+            "path": "apps/cicsia-vscode-extension",
+            "group": "test",
+            "problemMatcher": ["$tsc"]
         }
     ]
 }
